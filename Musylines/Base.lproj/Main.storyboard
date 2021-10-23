@@ -1,24 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pxo-1L-YLM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="bZW-qg-v4S">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="JpV-fq-S2u" customClass="LoginViewController" customModule="Armory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I0J-fw-pSC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loginScreen_signIn_label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="631-1k-KNG" customClass="UILocalizedLabel" customModule="Armory" customModuleProvider="target">
+                                <rect key="frame" x="111.5" y="277.5" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXQ-sw-ddH">
+                                <rect key="frame" x="22" y="318.5" width="367" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="loginScreen_signInPasswordPlaceholder_textField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-pj-2DS" customClass="UILocalizedTextField" customModule="Armory" customModuleProvider="target">
+                                <rect key="frame" x="22" y="376.5" width="367" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML3-Yt-Wr4" customClass="UILocalizedButton" customModule="Armory" customModuleProvider="target">
+                                <rect key="frame" x="24" y="430.5" width="367" height="30"/>
+                                <color key="backgroundColor" red="0.5" green="0.3554641388" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="loginScreen_signIn_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loginScreen_doNotHaveAnAccount_button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAg-z0-TaY" customClass="UILocalizedLabel" customModule="Armory" customModuleProvider="target">
+                                <rect key="frame" x="43.5" y="773" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-hi-eLv" customClass="UILocalizedButton" customModule="Armory" customModuleProvider="target">
+                                <rect key="frame" x="81.5" y="480.5" width="251" height="30"/>
+                                <state key="normal" title="loginScreen_forgotPassword_button">
+                                    <color key="titleColor" red="0.5" green="0.3554641388" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iQ-AW-Ref" customClass="UILocalizedButton" customModule="Armory" customModuleProvider="target">
+                                <rect key="frame" x="111.5" y="802" width="191" height="30"/>
+                                <color key="tintColor" red="0.5" green="0.3554641388" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="loginScreen_signUp_button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="musylines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8R-F4-YeB" customClass="UILocalizedLabel" customModule="Musylines" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="148" width="414" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="42"/>
+                                <color key="textColor" red="0.5" green="0.3554641387805122" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d23-kD-HuF"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ML3-Yt-Wr4" firstAttribute="leading" secondItem="d23-kD-HuF" secondAttribute="leading" constant="24" id="0df-C0-Wno"/>
+                            <constraint firstItem="LtT-hi-eLv" firstAttribute="centerX" secondItem="I0J-fw-pSC" secondAttribute="centerX" id="0tF-E0-Mu3"/>
+                            <constraint firstItem="c8R-F4-YeB" firstAttribute="top" secondItem="d23-kD-HuF" secondAttribute="top" constant="60" id="1w4-Rn-o5K"/>
+                            <constraint firstItem="631-1k-KNG" firstAttribute="top" secondItem="c8R-F4-YeB" secondAttribute="bottom" constant="78" id="3kf-hG-cAA"/>
+                            <constraint firstItem="0iQ-AW-Ref" firstAttribute="centerX" secondItem="I0J-fw-pSC" secondAttribute="centerX" id="5Y0-md-vIv"/>
+                            <constraint firstItem="ZzK-pj-2DS" firstAttribute="top" secondItem="hXQ-sw-ddH" secondAttribute="bottom" constant="24" id="5aX-mg-0nn"/>
+                            <constraint firstItem="d23-kD-HuF" firstAttribute="trailing" secondItem="ZzK-pj-2DS" secondAttribute="trailing" constant="25" id="KMs-wD-uak"/>
+                            <constraint firstItem="d23-kD-HuF" firstAttribute="trailing" secondItem="c8R-F4-YeB" secondAttribute="trailing" id="MQf-sC-UK4"/>
+                            <constraint firstItem="hXQ-sw-ddH" firstAttribute="top" secondItem="631-1k-KNG" secondAttribute="bottom" constant="20" id="Obc-GF-okf"/>
+                            <constraint firstItem="hXQ-sw-ddH" firstAttribute="leading" secondItem="d23-kD-HuF" secondAttribute="leading" constant="22" id="PsT-D9-A46"/>
+                            <constraint firstItem="LtT-hi-eLv" firstAttribute="top" secondItem="ML3-Yt-Wr4" secondAttribute="bottom" constant="20" id="RTy-2O-pr7"/>
+                            <constraint firstItem="d23-kD-HuF" firstAttribute="trailing" secondItem="ML3-Yt-Wr4" secondAttribute="trailing" constant="23" id="VvK-GO-iC4"/>
+                            <constraint firstItem="0iQ-AW-Ref" firstAttribute="top" secondItem="PAg-z0-TaY" secondAttribute="bottom" constant="8" id="XxI-PP-1ey"/>
+                            <constraint firstItem="PAg-z0-TaY" firstAttribute="centerX" secondItem="I0J-fw-pSC" secondAttribute="centerX" id="cLt-OP-gK9"/>
+                            <constraint firstItem="631-1k-KNG" firstAttribute="centerX" secondItem="I0J-fw-pSC" secondAttribute="centerX" id="dV9-yl-QJw"/>
+                            <constraint firstItem="d23-kD-HuF" firstAttribute="trailing" secondItem="hXQ-sw-ddH" secondAttribute="trailing" constant="25" id="fki-gN-wmJ"/>
+                            <constraint firstItem="d23-kD-HuF" firstAttribute="bottom" secondItem="0iQ-AW-Ref" secondAttribute="bottom" constant="30" id="lIX-HO-2ak"/>
+                            <constraint firstItem="ZzK-pj-2DS" firstAttribute="leading" secondItem="d23-kD-HuF" secondAttribute="leading" constant="22" id="pXr-71-B9f"/>
+                            <constraint firstItem="ML3-Yt-Wr4" firstAttribute="top" secondItem="ZzK-pj-2DS" secondAttribute="bottom" constant="20" id="xFW-an-Vvt"/>
+                            <constraint firstItem="c8R-F4-YeB" firstAttribute="leading" secondItem="d23-kD-HuF" secondAttribute="leading" id="zSD-Dl-YRr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1Hy-Vc-qh0"/>
+                    <connections>
+                        <outlet property="musylinesLabel" destination="c8R-F4-YeB" id="h3C-nF-lwO"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvJ-ph-dRs" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1836.2318840579712" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bcr-0e-g4V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pxo-1L-YLM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S6n-zG-IeY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JpV-fq-S2u" kind="relationship" relationship="rootViewController" id="kTT-z7-VZb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIZ-ob-Rhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.08695652173924" y="93.75"/>
         </scene>
     </scenes>
 </document>

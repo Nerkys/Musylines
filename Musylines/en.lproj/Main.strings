@@ -1,0 +1,21 @@
+//
+///* Class = "UIButton"; normalTitle = "loginScreen_signUp_button"; ObjectID = "0iQ-AW-Ref"; */
+//"0iQ-AW-Ref.normalTitle" = "loginScreen_signUp_button";
+//
+///* Class = "UILabel"; text = "loginScreen_signIn_label"; ObjectID = "631-1k-KNG"; */
+//"631-1k-KNG.text" = "loginScreen_signIn_label";
+//
+///* Class = "UIButton"; normalTitle = "loginScreen_forgotPassword_button"; ObjectID = "LtT-hi-eLv"; */
+//"LtT-hi-eLv.normalTitle" = "loginScreen_forgotPassword_button";
+//
+///* Class = "UIButton"; normalTitle = "loginScreen_signIn_button"; ObjectID = "ML3-Yt-Wr4"; */
+//"ML3-Yt-Wr4.normalTitle" = "loginScreen_signIn_button";
+//
+///* Class = "UILabel"; text = "loginScreen_doNotHaveAnAccount_button"; ObjectID = "PAg-z0-TaY"; */
+//"PAg-z0-TaY.text" = "loginScreen_doNotHaveAnAccount_button";
+//
+///* Class = "UITextField"; placeholder = "loginScreen_signInPasswordPlaceholder_textField"; ObjectID = "ZzK-pj-2DS"; */
+//"ZzK-pj-2DS.placeholder" = "loginScreen_signInPasswordPlaceholder_textField";
+//
+///* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "hXQ-sw-ddH"; */
+//"hXQ-sw-ddH.placeholder" = "E-mail";

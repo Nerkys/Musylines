@@ -1,0 +1,7 @@
+"musylines" = "Musylines";
+"loginScreen_signIn_label" = "Войти в систему";
+"loginScreen_signInPasswordPlaceholder_textField" = "Пароль";
+"loginScreen_signIn_button" = "Войти";
+"loginScreen_signUp_button" = "Зарегистрироваться";
+"loginScreen_forgotPassword_button" = "Забыл пароль";
+"loginScreen_doNotHaveAnAccount_button" = "Нет аккаунта?";
