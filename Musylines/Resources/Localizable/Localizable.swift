@@ -19,7 +19,11 @@ struct Localizable {
 }
 
 enum Strings {
-    @Localizable static var musylines = "Musylines"
+    @Localizable static var musylines = "musylines"
+    @Localizable static var registrationScreen_passwordRequirements_label = "registrationScreen_passwordRequirements_label"
+    @Localizable static var registrationScreen_nameAndSurnameRequirementsMinCharacters_label = "registrationScreen_nameAndSurnameRequirementsMinCharacters_label"
+    @Localizable static var registrationScreen_nameAndSurnameRequirementsLatinCharacters_label = "registrationScreen_nameAndSurnameRequirementsLatinCharacters_label"
+    @Localizable static var registrationScreen_phoneNumberRequirements_label = "registrationScreen_phoneNumberRequirements_label"
 }
 
 final class UILocalizedLabel: UILabel {

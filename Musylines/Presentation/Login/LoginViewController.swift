@@ -8,22 +8,45 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var musylinesLabel: UILocalizedLabel!
+    @IBOutlet weak var emailTextField: UILocalizedTextField!
+    @IBOutlet weak var passwordTextField: UILocalizedTextField!
+    
+    
+    @IBAction func goToRegistrationScreen(_ sender: UIButton) {
+        let registrationVC = UIStoryboard(name: "Main",bundle: nil)
+            .instantiateViewController(withIdentifier: "RegistrationViewController")
+        self.navigationController?.pushViewController(registrationVC, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        configureMusylinesLabel()
+        musylinesLabel.configureMusylinesLabelShadows()
     }
     
-    func configureMusylinesLabel() {
-        musylinesLabel.layer.shadowColor = UIColor.black.cgColor
-        musylinesLabel.layer.shadowRadius = 2.0
-        musylinesLabel.layer.shadowOpacity = 0.35
-        musylinesLabel.layer.shadowOffset = CGSize(width: 3, height: 3)
-//        musylinesLabel.layer.masksToBounds = false
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case emailTextField:
+            passwordTextField.becomeFirstResponder()
+        default:
+            passwordTextField.resignFirstResponder()
+        }
+
+        return true
+    }
+}

@@ -35,6 +35,13 @@
 		6931F1962724A957005F1929 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6931F1832724A957005F1929 /* Montserrat-SemiBoldItalic.ttf */; };
 		6931F1972724A957005F1929 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6931F1842724A957005F1929 /* Montserrat-ExtraBoldItalic.ttf */; };
 		6931F1992724A969005F1929 /* FontNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F1982724A969005F1929 /* FontNameManager.swift */; };
+		6931F19C2724B355005F1929 /* UILabel+configureMusylinesLabelShadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F19B2724B355005F1929 /* UILabel+configureMusylinesLabelShadows.swift */; };
+		694E044C272602FE001EC41B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E044B272602FE001EC41B /* LoginViewModel.swift */; };
+		694E044E2726030A001EC41B /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E044D2726030A001EC41B /* RegistrationViewModel.swift */; };
+		697200092724BB8C00D4135B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697200082724BB8C00D4135B /* RegistrationViewController.swift */; };
+		698CF91C272614BD00DBEB2F /* UITextField+textPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CF91B272614BD00DBEB2F /* UITextField+textPublisher.swift */; };
+		698CF92027261D4700DBEB2F /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CF91F27261D4700DBEB2F /* RegexPatterns.swift */; };
+		698CF92227261E9F00DBEB2F /* String+matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CF92127261E9F00DBEB2F /* String+matches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +79,13 @@
 		6931F1832724A957005F1929 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		6931F1842724A957005F1929 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		6931F1982724A969005F1929 /* FontNameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontNameManager.swift; sourceTree = "<group>"; };
+		6931F19B2724B355005F1929 /* UILabel+configureMusylinesLabelShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+configureMusylinesLabelShadows.swift"; sourceTree = "<group>"; };
+		694E044B272602FE001EC41B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		694E044D2726030A001EC41B /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		697200082724BB8C00D4135B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		698CF91B272614BD00DBEB2F /* UITextField+textPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+textPublisher.swift"; sourceTree = "<group>"; };
+		698CF91F27261D4700DBEB2F /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		698CF92127261E9F00DBEB2F /* String+matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+matches.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,7 @@
 			children = (
 				6931F1562724A0B6005F1929 /* Application */,
 				6931F1572724A0D4005F1929 /* Data */,
+				6931F19A2724B327005F1929 /* Extension */,
 				6931F15D2724A148005F1929 /* Networking */,
 				6931F15B2724A105005F1929 /* Presentation */,
 				6931F1602724A174005F1929 /* Resources */,
@@ -157,6 +172,7 @@
 		6931F15B2724A105005F1929 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				697200072724BB5100D4135B /* Registration */,
 				6931F15C2724A117005F1929 /* Login */,
 			);
 			path = Presentation;
@@ -166,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				6931F1462724A00B005F1929 /* LoginViewController.swift */,
+				694E044B272602FE001EC41B /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -196,6 +213,7 @@
 		6931F1602724A174005F1929 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				698CF91E27261D2600DBEB2F /* Regex */,
 				6931F1702724A930005F1929 /* Fonts */,
 				6931F1642724A2F6005F1929 /* Localizable */,
 				6931F14B2724A00C005F1929 /* Assets.xcassets */,
@@ -247,6 +265,33 @@
 				6931F1842724A957005F1929 /* Montserrat-ExtraBoldItalic.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		6931F19A2724B327005F1929 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6931F19B2724B355005F1929 /* UILabel+configureMusylinesLabelShadows.swift */,
+				698CF91B272614BD00DBEB2F /* UITextField+textPublisher.swift */,
+				698CF92127261E9F00DBEB2F /* String+matches.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		697200072724BB5100D4135B /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				697200082724BB8C00D4135B /* RegistrationViewController.swift */,
+				694E044D2726030A001EC41B /* RegistrationViewModel.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		698CF91E27261D2600DBEB2F /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				698CF91F27261D4700DBEB2F /* RegexPatterns.swift */,
+			);
+			path = Regex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,11 +386,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698CF92027261D4700DBEB2F /* RegexPatterns.swift in Sources */,
 				6931F1472724A00B005F1929 /* LoginViewController.swift in Sources */,
+				698CF92227261E9F00DBEB2F /* String+matches.swift in Sources */,
+				694E044E2726030A001EC41B /* RegistrationViewModel.swift in Sources */,
 				6931F1432724A00B005F1929 /* AppDelegate.swift in Sources */,
+				6931F19C2724B355005F1929 /* UILabel+configureMusylinesLabelShadows.swift in Sources */,
 				6931F1992724A969005F1929 /* FontNameManager.swift in Sources */,
+				694E044C272602FE001EC41B /* LoginViewModel.swift in Sources */,
+				697200092724BB8C00D4135B /* RegistrationViewController.swift in Sources */,
 				6931F16C2724A359005F1929 /* Localizable.swift in Sources */,
 				6931F1452724A00B005F1929 /* SceneDelegate.swift in Sources */,
+				698CF91C272614BD00DBEB2F /* UITextField+textPublisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
